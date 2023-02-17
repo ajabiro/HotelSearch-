@@ -13,9 +13,9 @@ public class Hotel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String hotel_name;
+	private String hotelName;
 	private String city;
-	private Integer price_per_night;
+	private Integer pricePerNight;
 
 	
 	//no args constructor
@@ -23,12 +23,12 @@ public class Hotel {
 	}
 	
 	//constructor with 4 attributes
-	public Hotel(Long id, String hotel_name, String city, Integer price_per_night) {
+	public Hotel(Long id, String hotelName, String city, Integer pricePerNight) {
 		super();
 		this.id = id;
-		this.hotel_name = hotel_name;
+		this.hotelName = hotelName;
 		this.city = city;
-		this.price_per_night = price_per_night;
+		this.pricePerNight = pricePerNight;
 	
 	}
 
@@ -40,12 +40,12 @@ public class Hotel {
 		this.id = id;
 	}
 
-	public String getHotel_name() {
-		return hotel_name;
+	public String getHotelName() {
+		return hotelName;
 	}
 
-	public void setHotel_name(String hotel_name) {
-		this.hotel_name = hotel_name;
+	public void setHotel_name(String hotelName) {
+		this.hotelName = hotelName;
 	}
 
 	public String getCity() {
@@ -56,17 +56,17 @@ public class Hotel {
 		this.city = city;
 	}
 
-	public Integer getPrice_per_night() {
-		return price_per_night;
+	public Integer getPricePerNight() {
+		return pricePerNight;
 	}
 
-	public void setPrice_per_night(Integer price_per_night) {
-		this.price_per_night = price_per_night;
+	public void setPricePerNightt(Integer PricePerNight) {
+		this.pricePerNight = PricePerNight;
 	}
 
 	@Override
 	public String toString() {
-		return "Hotel [id=" + id + ", hotel_name=" + hotel_name + ", city=" + city + ", price_per_night="
-				+ price_per_night + "]";
+		return "Hotel [id=" + id + ", hotelName=" + hotelName + ", city=" + city + ", PricePerNight="
+				+ pricePerNight + "]";
 		}
 }

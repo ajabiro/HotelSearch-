@@ -12,7 +12,7 @@
 <body>
 <h1> Hotel Search </h1>
 <p>
-	<form action="/hotel-results" method="POST">
+	<form action="/results" method="POST">
 	
 		  <label for="city">City</label>
  			 <select name="city">
